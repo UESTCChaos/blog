@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+
+
+{% block content1 %}
+<div class="container-fluid row">
+    <div class="container table_box col-lg-2" style=""></div>
+    <div class="container table_box col-lg-5" style="padding-left: 68px">
+        <label style="font-size: 16px"><span class="glyphicon glyphicon-list" style="color: gray" aria-hidden="true"></span></label>
+        <span style="font-size: 20px">最新</span>
+        <hr style="border: 1px solid silver">
+
+{% endblock %}
+
+
+{% block content2 %}
+	{% include "blog/lists.html" %}
+{% endblock %}
+
+{% block End %}
+<div class="container" style="padding-bottom: 50px">
+		<hr style="border: 1px solid silver">
+		<a href="#" style="float: right" data-toggle="modal" data-target="#about-modal">联系我</a>
+		<p>&copy; Chaos </p>
+</div>
+{% endblock %}
+
